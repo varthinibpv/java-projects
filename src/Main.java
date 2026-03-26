@@ -20,9 +20,10 @@ public class Main {
         System.out.println("Trimming and Replacing: " +literal.trim().replace(" ", "Java"));
         System.out.println("Checking Equality: " +literal.equals(strObj));
         System.out.println("Checking Concatenation: " +literal.equalsIgnoreCase(strObj));
-        System.out.println("Checking Length: " +literal.length());
+        String reversed = new StringBuilder(literal).reverse().toString();
+        System.out.println("Reversed String : " + reversed);
 
-        // 9. StringBuilder for efficient concatenation
+                // 9. StringBuilder for efficient concatenation
         StringBuilder sb = new StringBuilder();
         sb.append("Hello").append(" ").append("StringBuilder");
         System.out.println("StringBuilder: " + sb.toString());
